@@ -9,7 +9,12 @@
     display: none;
 } */
 
-@theme {
+
+.bg-primary{
+    background-color:#5044e5 ;
+    color:#fff
+}
+:root {
     --color-primary :#5044e5;
 }
 .rich-text { font-size: 15px;  }

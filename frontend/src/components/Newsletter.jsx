@@ -8,7 +8,7 @@ const Newsletter = () => {
     <form className=' flex items-center justify-between max-w-2xl w-full md:h-13 h-12'>
         <input type="text" className=' border border-gray-300 rounded-md h-full border-r-0 outline-none
         w-full rounded-r-none px-3 text-gray-500 ' placeholder='Enter your email id' required/>
-        <button type='submit' className=' md:px-12 px-8 h-full text-white bg-primary/80
+        <button type='submit' className=' md:px-12 px-8 h-full text-white bg-primary
         transition-all cursor-pointer rounded-md rounded-l-none'>Subcribe</button>
     </form>
     </div>
