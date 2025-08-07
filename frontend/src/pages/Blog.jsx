@@ -7,6 +7,8 @@ import Loader from '../components/Loader'
 import Navbar from '../components/Navbar'
 import { useAppContext } from '../context/AppContext'
 import toast from 'react-hot-toast'
+
+const baseUrl = import.meta.env.VITE_BASE_URL;
 const Blog = () => {
 
   const {id} = useParams()
@@ -77,7 +79,7 @@ const Blog = () => {
         text-primary'>Michael Brown</p>
       </div>
       <div className=' mx-5 max-w-5xl md:mx-auto my-10 mt-6'>
-         <img src={data.image} alt=""  className=' rounded-3xl mb-5'/>
+         <img src={`${baseUrl}/${data.image}`} alt=""  className=' rounded-3xl mb-5'/>
          <div  className=' rich-text max-w-3xl mx-auto' dangerouslySetInnerHTML={{__html:data.description}}></div>
         {/*Comments section */}
         <div className=' mt-14 mb-10 max-w-3xl mx-auto'>
